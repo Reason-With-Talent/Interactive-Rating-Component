@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;500;700;900" rel="stylesheet">
+    <title>Interactive-rating-component</title>
+</head>
+
+<body>
+    <section class="interactive-main-one">
+        <div class="interactive-main-six">
+            <img src="IMAGES/illustration-thank-you.svg" alt="">
+        </div>
+        <div class="interactive-main-seven">
+            <h3> You selected <span id="rated"></span> out of 5</h3>
+        </div>
+        <div class="interactive-main-eight">
+            <h2>Thank You</h2>
+            <p>We appreciate you taking the time to give a rating.</p>
+            <p>If you ever need more support,don't hesitate to get in touch</p>
+        </div>
+    </section>
+
+    <script>
+        let rate = localStorage.getItem("rate")
+        console.log(rate)
+        rated.innerHTML = rate
+    </script>
+</body>
+
+</html>
